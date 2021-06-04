@@ -24,6 +24,16 @@ body{
 .navigation.active{
     width: 60px;   
 }
+a{
+    text-decoration: none;
+    color: white;
+}
+
+td img{
+   width: 100px;
+   height: 100px;  
+   object-fit: cover;
+}
 button{
     background: transparent;
     outline: none;
@@ -103,6 +113,24 @@ button{
     color: #111;
 }
 
+@media screen and (max-width: 1000px) {
+    .main{
+        width: calc(100% - 60px);
+        left: 60px;
+    }
+    .navigation{
+        width: 60px;
+    }
+
+    .main.active{
+        width: calc(100% - 300px);
+        left: 300px;
+    }
+    .navigation.active{
+        width: 300px;
+    }
+}
+
 [data-tab-content]{
     display: none;
 }
@@ -151,76 +179,45 @@ button{
       cursor: pointer;
   }
 
+  .cars__table{
+      margin-bottom: 10em;
+  }
+
   form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-left: 10%;
+    width: 100%;
+    margin-bottom: 1em;
   }
 
   .form{
-      width: 200px;
-      position: relative;
-      height: 60px;
-      overflow: hidden;
+      width: 150px;
   }
 
   .form input{
       width: 100%;
-      height: 100%;
-      color: teal;
-      padding-top: 20px;
-      border: none;
+      height: 30px;
+      border: 1px solid black;
+      border-radius: 5px;
       outline: none;
       cursor: pointer;
+      padding: 2px;
+      caret-color: teal;
   }
-
-  .form label{
-      position: absolute;
-      bottom: 0;
-      left: 0%;
-      width: 100%;
-      height: 100%;
-      pointer-events: none;
-      border-bottom: 1px solid black;
+  
+  #add{
+      outline: none;
+      background: teal;
+      color: #fff;
+      width: auto;
+      padding: 2px 5px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 17px;
+      display: flex;
+      justify-content: center;
+      margin-top: 2em;
   }
-
-  .form label::after{
-      content: '';
-      position: absolute;
-      left: 0px;
-      bottom: -1px;
-      height: 100%;
-      width: 100%;
-      border-bottom: 3px solid #003147;
-      transform: translateX(-100%);
-      transition: transform 0.3s ease;
-  }
-
-  .content-name{
-      position: absolute;
-      bottom: 5px;
-      left: 0px;
-      transition: all 0.3s ease;
-  }
-
-  .form input:focus + .label-name .content-name,
-   .form input:not(:placeholder-shown) + .label-name .content-name{
-      transform: translateY(-150%);
-      font-size: 14px;
-      color: #003147;
-  }
-
-  .form input:focus + .label-name::after,
-  .form input:not(:placeholder-shown) + .label-name::after{
-      transform: translateX(0);
-  }
-
- .form__section{
-     display: grid;
-     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-
- }
-
+  
   #previews{
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -230,7 +227,7 @@ button{
     }
 
   #previews img{
-      width: 100%;
+      max-width: 200px;
       height: 100%;
       object-fit: cover;
   }
@@ -250,8 +247,13 @@ input[type = 'file']{
 }
 
 .uploadImages{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    margin-bottom: 3em;
+}
+
+.edit-form{
+    display: none;
+}
+
+.label-name{
+    font-weight: 500;
 }

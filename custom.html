@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        img{
+            height:100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 0;
+        }
+        .customGrid{
+            margin: 4em;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+            grid-auto-flow:dense;
+            gap: 5px;
+            box-shadow: 0px 0px 5px 0px #666;
+        }
+    </style>
+    <title>Tuti Motors</title>
+</head>
+<body>
+    <nav> 
+        <div class="logo"><img src="images/svg/logo.svg" alt="" style="filter: brightness(0) invert()"></div> 
+       <div class="search">
+            <svg viewBox="0 0 512 512" fill= "#3888d8" width="20" title="search">
+            <path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" />
+            </svg>
+        </div>
+       
+        <div class="menu-icons">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#fff" class="hamburger-icon"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg>
+        </div>
+         <div class="menu-container">
+            <ul class="menu">
+                <li class="item"><a class="nav__link" href="index.html">Home</a></li>
+                <li class="item"><a class="nav__link" href="index.html#products">Cars</a></li>
+                <li class="item"><a class="nav__link" href="#contact">Sell</a></li>
+                <li class="item"><a class="nav__link" href="index.html#about">About</a></li>
+                <li class="item"><a class="nav__link" href="index.html#services">Services</a></li>
+                <li class="item"><a class="nav__link" href="custom.html">Customize</a></li>
+                <li class="item">
+                    <div class="button login"> <a href="login-signup.html"> Login</a></div>
+                </li>
+            </ul> 
+         </div>
+        </nav> 
+        <main>
+            <h2 style="margin: 2em auto auto 4em;">Customized car gallery</h2>
+                <div class="customGrid">
+                    <img src="images/jose-carbajal-8xyki0bqvgw-unsplash.jpg" alt="">
+                    <img src="images/alan-flack-VtfiPvSGh5s-unsplash.jpg" alt="">
+                    <img src="images/adam-stefanca-hdMSxGizchk-unsplash.jpg" alt="">
+                    <img src="images/jose-carbajal-8xyki0bqvgw-unsplash.jpg" alt="">
+                    <img src="images/alan-flack-VtfiPvSGh5s-unsplash.jpg" alt="">
+                    <img src="images/jose-carbajal-8xyki0bqvgw-unsplash.jpg" alt="">
+                    <img src="images/alan-flack-VtfiPvSGh5s-unsplash.jpg" alt="">
+                    <img src="images/jose-carbajal-8xyki0bqvgw-unsplash.jpg" alt="">
+                    <img src="images/alan-flack-VtfiPvSGh5s-unsplash.jpg" alt="">
+                    <img src="images/jose-carbajal-8xyki0bqvgw-unsplash.jpg" alt="">
+                    <img src="images/adam-stefanca-hdMSxGizchk-unsplash.jpg" alt="">
+                    <img src="images/adam-stefanca-hdMSxGizchk-unsplash.jpg" alt="">
+                    <img src="images/adam-stefanca-hdMSxGizchk-unsplash.jpg" alt="">
+                    <img src="images/adam-stefanca-hdMSxGizchk-unsplash.jpg" alt="">     
+                </div>
+
+                <div class="contact" id="contact">
+                    <div id="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15955.83996592118!2d36.8398284!3d-1.1884905!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x57fa2cb6a02165a3!2sTuti%20Motors!5e0!3m2!1sen!2ske!4v1622242107007!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" title=""></iframe>
+                    </div>
+                    <div style="display: flex;"> 
+                        <form class="email" action="https://formsubmit.co/tutimotors@gmail.com" method="POST" style="align-self: center;">
+                            <h2 class="form-title">Send us an email</h2>
+                            <!---In the value attribute put in domain name----------->
+                            <input type="hidden" name="_next" value="https://yourdomain.co/thankyou.html">
+                            <input type="email" name="email" placeholder="Email Address" required>
+                            <input type="text" name="name" placeholder="Name" required>
+                            <input class="message" type="text" name="message" placeholder="Write your message here." required>
+                            <button class="submit" type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
+        </main>
+</body>
+</html>

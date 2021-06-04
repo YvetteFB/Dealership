@@ -14,7 +14,7 @@
     <div class="container">
         <div class="navigation">
            
-                    <button >
+                    <button style="pointer-events: none;">
                         <img src="images/svg/logo.svg" alt="" style="filter: brightness(0) invert(); width: 55px; padding-left: 7px;">
                         <span class="title"><h2>Tuti Motors</h2></span>
                     </button>
@@ -34,12 +34,12 @@
                         <span class="title">Add</span>
                     </button>
         
-                    <button>
+                    <button class="tabs__button">
                         <span class="icon">
                             <i class="fa fa-sign-out-alt" aria-hidden="true"></i>
 
                         </span>
-                        <span class="title">Sign Out</span>
+                        <span class="title"> <a href="Admin-login.html">Sign Out</a></span>
                     </button>
                 
         </div>
@@ -66,6 +66,7 @@
                                     <th>Fuel</th>
                                     <th>Transmission</th>
                                     <th>Price</th>
+                                    <th>Photos</th>
                                     <th></th>
                                   </tr>
                                 </thead>
@@ -80,6 +81,7 @@
                                     <td>Diesel</td>
                                     <td>Manual</td>
                                     <td>KSH 2,850,000.00</td>
+                                    <td><img src="images/jose-carbajal-8xyki0bqvgw-unsplash.jpg" alt=""></td>
                                     <td><i class="fas fa-edit"></i><i class="fas fa-trash-alt"></i></td>
                                   </tr>
                                   <tr>
@@ -92,6 +94,7 @@
                                     <td>Diesel</td>
                                     <td>Manual</td>
                                     <td>KSH 2,850,000.00</td>
+                                    <td><img src="images/alan-flack-VtfiPvSGh5s-unsplash.jpg" alt=""></td>
                                     <td><i class="fas fa-edit"></i><i class="fas fa-trash-alt"></i></td>
                                   </tr>
                                   <tr>
@@ -104,6 +107,7 @@
                                     <td>Diesel</td>
                                     <td>Manual</td>
                                     <td>KSH 2,850,000.00</td>
+                                    <td><img src="images/jose-carbajal-8xyki0bqvgw-unsplash.jpg" alt=""></td>
                                     <td><i class="fas fa-edit"></i><i class="fas fa-trash-alt"></i></td>
                                   </tr>
                                   <tr>
@@ -116,6 +120,7 @@
                                     <td>Diesel</td>
                                     <td>Manual</td>
                                     <td>KSH 2,850,000.00</td>
+                                    <td><img src="images/alan-flack-VtfiPvSGh5s-unsplash.jpg" alt=""></td>
                                     <td><i class="fas fa-edit"></i><i class="fas fa-trash-alt"></i></td>
                                   </tr>
                                   <tr>
@@ -128,6 +133,7 @@
                                     <td>Diesel</td>
                                     <td>Manual</td>
                                     <td>KSH 2,850,000.00</td>
+                                    <td><img src="images/jose-carbajal-8xyki0bqvgw-unsplash.jpg" alt=""></td>
                                     <td><i class="fas fa-edit"></i><i class="fas fa-trash-alt"></i></td>
                                   </tr>
                                   <tr>
@@ -140,6 +146,7 @@
                                     <td>Diesel</td>
                                     <td>Manual</td>
                                     <td>KSH 2,850,000.00</td>
+                                    <td><img src="images/jose-carbajal-8xyki0bqvgw-unsplash.jpg" alt=""></td>
                                     <td><i class="fas fa-edit"></i><i class="fas fa-trash-alt"></i></td>
                                   </tr>
                                   <tr>
@@ -152,6 +159,10 @@
                                     <td>Diesel</td>
                                     <td>Manual</td>
                                     <td>KSH 2,850,000.00</td>
+                                    <td>
+                                      <img src="images/jose-carbajal-8xyki0bqvgw-unsplash.jpg" alt="">
+    
+                                    </td>
                                     <td><i class="fas fa-edit"></i><i class="fas fa-trash-alt"></i></td>
                                   </tr>
                                   <tr>
@@ -164,11 +175,73 @@
                                     <td>Diesel</td>
                                     <td>Manual</td>
                                     <td>KSH 2,850,000.00</td>
+                                    <td><img src="images/jose-carbajal-8xyki0bqvgw-unsplash.jpg" alt=""></td>
                                     <td><i class="fas fa-edit"></i><i class="fas fa-trash-alt"></i></td>
                                   </tr>
                                   
                                 </tbody>
                               </table>
+                        </div>
+                        <div class="form__section edit-form">
+                          <form action="">
+                            <h2>Edit the car details</h2>
+                            <div class="form ">
+                                <label for="model" class="label-name">
+                                    Model
+                                </label>  
+                                <input type="text" name="model" placeholder=" " id="model"/> 
+                            </div>
+                            <div class="form">
+                                <label for="make" class="label-name">
+                                    Make
+                                </label>  
+                                <input type="text" name="make" placeholder=" " id="make"/> 
+                            </div>
+                            <div class="form">
+                                <label for="type" class="label-name">
+                                    Type
+                                </label> 
+                                <input type="text" name="type" placeholder=" " id="type"/>  
+                            </div>
+                            <div class="form">
+                                <label for="year" class="label-name">
+                                    Year
+                                </label> 
+                                <input type="text" name="year" placeholder=" "  id="year"/>  
+                            </div>
+                            <div class="form">
+                                <label for="engine" class="label-name">
+                                   Engine
+                                </label>   
+                                <input type="text" name="engine" placeholder=" " id="engine"/>
+                            </div>
+                            <div class="form">
+                                <label for="milage" class="label-name">
+                                   Milage
+                                </label> 
+                                <input type="text" name="milage" placeholder=" " id="milage"/>  
+                            </div>
+                            <div class="form">
+                                <label for="fuel" class="label-name">
+                                    Fuel
+                                </label>   
+                                <input type="text" name="fuel" placeholder=" "  id="fuel"/>
+                            </div>
+                            <div class="form">
+                                <label for="transmission" class="label-name">
+                                   Transmission
+                                </label> 
+                                <input type="text" name="transmission" placeholder=" " id="transmission"/>  
+                            </div>
+                            <div class="form">
+                                <label for="price" class="label-name">
+                                    Price
+                                </label>  
+                                <input type="text" name="price" placeholder=" " id="price"/> 
+                            </div>
+                            <button type="submit" id="add">Save Changes</button>
+                          </form>
+                           
                         </div>
                 </div>
                 <div class = 'tab2' data-tab-content>
@@ -237,66 +310,76 @@
                     <div class="form__section">
                       <form action="">
                         <div class="form">
-                            <input type="text" name="model" placeholder=" "/>
-                            <label for="model" class="label-name">
-                                <span class="content-name">Model</span>
-                            </label>   
+                          <label for="model" class="label-name">
+                           Model
+                          </label> 
+                          <input type="text" name="model" placeholder=" "/>
+                              
                         </div>
                         <div class="form">
-                            <input type="text" name="make" placeholder=" "/>
+                            
                             <label for="make" class="label-name">
-                                <span class="content-name">Make</span>
+                                Make
                             </label>   
+                            <input type="text" name="make" placeholder=" "/>
                         </div>
                         <div class="form">
-                            <input type="text" name="type" placeholder=" "/>
+                            
                             <label for="type" class="label-name">
-                                <span class="content-name">Type</span>
+                               Type
                             </label>   
+                            <input type="text" name="type" placeholder=" "/>
                         </div>
                         <div class="form">
-                            <input type="text" name="year" placeholder=" "/>
                             <label for="year" class="label-name">
-                                <span class="content-name">Year</span>
-                            </label>   
+                               Year
+                            </label>  
+                            <input type="text" name="year" placeholder=" "/>
+ 
                         </div>
                         <div class="form">
-                            <input type="text" name="engine" placeholder=" "/>
                             <label for="engine" class="label-name">
-                                <span class="content-name">Engine</span>
+                                Engine
                             </label>   
+                            <input type="text" name="engine" placeholder=" "/>
                         </div>
                         <div class="form">
-                            <input type="text" name="milage" placeholder=" "/>
+                           
                             <label for="milage" class="label-name">
-                                <span class="content-name">Milage</span>
+                                Milage
                             </label>   
+                            <input type="text" name="milage" placeholder=" "/>
                         </div>
                         <div class="form">
-                            <input type="text" name="fuel" placeholder=" "/>
+                            
                             <label for="fuel" class="label-name">
-                                <span class="content-name">Fuel</span>
+                              Fuel
                             </label>   
+                            <input type="text" name="fuel" placeholder=" "/>
                         </div>
                         <div class="form">
-                            <input type="text" name="transmission" placeholder=" "/>
+                            
                             <label for="transmission" class="label-name">
-                                <span class="content-name">Transmission</span>
-                            </label>   
+                                Transmission
+                            </label> 
+                            <input type="text" name="transmission" placeholder=" "/>  
                         </div>
                         <div class="form">
-                            <input type="text" name="price" placeholder=" "/>
+                            
                             <label for="price" class="label-name">
-                                <span class="content-name">Price</span>
+                               Price
                             </label>   
+                            <input type="text" name="price" placeholder=" "/>
                         </div>
+                        <div class="uploadImages">
+                          <input type="file" id="images" multiple accept="image/*" style="width: 200px;">
+                          <label for="images" id="imagesLabel">
+                              <i class="fas fa-upload"></i>Choose photos</label>
+                          <div id="previews"></div>
+                        </div>
+                        <button type="submit" id="add">Submit</button>
                       </form>
-                      <div class="uploadImages">
-                        <input type="file" id="images" multiple accept="image/*" style="width: 200px;">
-                        <label for="images" id="imagesLabel">
-                            <i class="fas fa-upload"></i>Choose photos</label>
-                        <div id="previews"></div>
-                      </div>  
+                       
                     </div>
                     
                 </div>
@@ -359,6 +442,50 @@
                 counter += 1;
             }
             }
+        }
+    </script>
+    <script>
+      const edit = document.querySelectorAll('.fa-edit');
+      const erase = document.querySelectorAll('.fa-trash-alt');
+      var table = document.querySelector('.content-table'), rIndex;
+      var selectedRow = null;
+      var rows = document.querySelector('.content-table').getElementsByTagName('tbody')[0].getElementsByTagName('tr');
+      
+    
+        for(var i = 0; i < table.rows.length; i++){
+      
+          edit[i].addEventListener('click', () =>{
+              
+              document.querySelector(".edit-form").style.display = "block";
+
+            for (i = 0; i < rows.length; i++) {
+            rows[i].onclick = function() {
+              selectedRow = (this.rowIndex + 1);
+              document.getElementById('model').value = rows[selectedRow].cells[0].innerText;
+              document.getElementById('make').value = rows[selectedRow].cells[1].innerText;
+              document.getElementById('type').value = rows[selectedRow].cells[2].innerText;
+              document.getElementById('year').value = rows[selectedRow].cells[3].innerText;
+              document.getElementById('engine').value = rows[selectedRow].cells[4].innerText;
+              document.getElementById('milage').value = rows[selectedRow].cells[5].innerText;
+              document.getElementById('fuel').value = rows[selectedRow].cells[6].innerText;
+              document.getElementById('transmission').value = rows[selectedRow].cells[7].innerText;
+              document.getElementById('price').value = rows[selectedRow].cells[8].innerText;
+              }
+            }
+          })    
+        }
+  
+
+        for(var i = 0; i < table.rows.length; i++){
+          erase[i].addEventListener('click', () =>{
+            for (i = 0; i < rows.length; i++) {
+            rows[i].onclick = function() {
+             selectedRow = (this.rowIndex+1);
+            table.deleteRow(selectedRow);
+
+              }    
+            }
+          })
         }
     </script>
 </body>
