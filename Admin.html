@@ -456,7 +456,7 @@
             }
 
                 document.addEventListener('click',function(e){
-               if(e.target && e.target.id== 'fa-edit'){
+               if(e.target && e.target.id=='fa-edit'){
                 document.querySelector(".edit-form").style.display = "block";
 
                   for (i = 0; i < rows.length; i++) {
@@ -480,10 +480,10 @@
         }
       for(var i = 0; i < table.rows.length; i++){
           document.addEventListener('click',function(e){
-            if(e.target && e.target.id== 'fa-trash-alt'){
+            if(e.target && e.target.id=='fa-trash-alt'){
             for (i = 0; i < rows.length; i++) {
               rows[i].onclick = function() {
-              selectedRow = (this.rowIndex+1);
+              selectedRow = (this.rowIndex);
               table.deleteRow(selectedRow);
               }    
             }
